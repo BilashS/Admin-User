@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin/User</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="tab">
+    <button class="tab-links" onclick="openMenu(event, 'Admin')">Admin</button>
+    <button class="tab-links" onclick="openMenu(event, 'User')">User</button>
+</div>
+<hr>
+<div id="Admin" class="tab-content">
+        <form action="javascript:void(0);" method="POST" onsubmit="app.Add()">
+            <h3>To do List!</h3>
+            <input type="text" id="add-task" placeholder="New task...">
+            <input type="submit" value="Add" >
+            <p id="counter" ></p>
+        </form>
+
+    <div id="spoiler">
+        <form action="javascript:void(0);" method="POST" id="saveEdit">
+            <input type="text" id="edit-task">
+            <input type="submit" value="Edit">
+        </form>
+    </div>
+
+    <div class="table">
+        <table>
+            <tr>
+                <th>Tasks</th>
+            </tr>
+            <tbody id="tasks">
+            </tbody>
+        </table>
+    </div>
+    <hr>
+    <div class="weather">
+        <p>Weather forecast</p>
+        <input placeholder="Введіть назву міста" type="text" id="input_form" value="">
+        <input type="submit" onclick="getValue()">
+        <div id="showData"></div>
+    </div>
+    <hr>
+</div>
+
+<div id="User" class="tab-content">
+    <h3 style="text-align: center">Users table</h3>
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Number:</th>
+            <th>Name:</th>
+            <th>Email:</th>
+            <th>Phone:</th>
+            <th>Username:</th>
+            <th>Website:</th>
+            <th>Remove</th>
+
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="myTr">
+            <td class="number"></td>
+            <td class="name"></td>
+            <td class="email"></td>
+            <td class="phone"></td>
+            <td class="username"></td>
+            <td class="website"></td>
+            <td class="X"></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<script src="scripts/main.js"></script>
+</body>
+</html>

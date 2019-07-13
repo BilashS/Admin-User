@@ -1,0 +1,110 @@
+body {
+    padding: 0;
+    margin: 0;
+    min-width: 250px;
+}
+
+.tab {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.tab button {
+    border: 3px outset #add4eb;
+    color: magenta;
+    font-size: 25px;
+    font-family: cursive;
+    padding: 20px;
+    margin: 50px;
+    border-radius: 100%;
+}
+
+.tab button:hover {
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+
+.tab-content {
+    display: none;
+}
+
+#Admin {
+    background-color: gainsboro;
+
+}
+
+.tab-content form {
+    color: red;
+    text-align: center;
+    margin-left: 100px;
+}
+
+.table {
+    color: darkblue;
+    text-align: center;
+    padding-left: 595px;
+}
+
+#spoiler {
+    display: none;
+}
+
+.weather {
+    margin-left: 595px;
+}
+
+.weather p {
+    margin-left: 70px;
+    color: magenta;
+    font: 18px Verdana;
+}
+
+#showData {
+    margin-top: 10px;
+}
+
+.weather th, td, p, input {
+    font: 14px Verdana;
+
+}
+
+.weather table, th, td {
+    border-collapse: collapse;
+    padding: 2px 3px;
+    text-align: center;
+}
+
+.weather th {
+    font-weight: bold;
+}
+
+#showTable {
+    margin-left: 350px;
+}
+
+#showTable table, th, td {
+    font: 12px Verdana;
+    /*border: solid 2px black;*/
+    border-collapse: collapse;
+    padding: 2px 3px;
+    text-align: center;
+    font-weight: bold;
+
+}
+
+td button {
+    background-color: #00008b;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 50px;
+    color: #fff;
+}
+
+
+
+
+
+
+
